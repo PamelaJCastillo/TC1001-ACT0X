@@ -1,0 +1,16 @@
+Parte 5 Actividad01.
+------ AGREGAR COLOR Y GENERAR CÍRCULO----- 
+
+Para agregar un color nuevo fui a la útlima parte del código donde ya estaban
+programados los colores negreo, verde, rojo, blanco y azul. Aquí agregué por
+su nombre en ingles el color amarillo y azul turquesa indicando una letra para
+cada uno con la cuel se cambiaría el color de la línea para generar la figura.
+Estas fuerin Y para amarillo y C para azul turquesa. 
+
+Mientras que para generar un círculo. Utilicé up() para que la línea que
+genera la figura se levante de la hoja y no deje ningun trazo, después goto
+para que esta línea vaya al punto indicado por el mouse y después utilizo
+down() para bajar de nuevo la línea a la hoja y que se comience a generar la
+figura con begin_fill(). Le indiqué con forward cuanto se debeía mover y
+cuanto hacia qué lado. Para terminar agregué end_fill() para indicar que se
+había terminado el trazo de la figura.
