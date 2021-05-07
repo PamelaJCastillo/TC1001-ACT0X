@@ -35,7 +35,6 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    "En esta parte del codigo con un hago que la línea qe dibuja las figuras se levante de la hoja, con goto llevo la linea al punto indicado por el mouse, con down vuelvo a bajar la línea para generar el trazo. Posteriormente con begin_fill indio que comenzará a dibujarse, con left le doy la instruccion de hacia qué lado generará el círculo y cuando se va a mover . Por último le indico que la creación de la figura termina."
     up()
     goto(start.x, start.y)
     down()
@@ -79,7 +78,6 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
-"En esta parte indico un nuevo color con su plabra en inglés e indico la tecla del teclado que tendrá que ser presionada para que la línea que dibuja ls figuras tenga ese color. Agregué en color amarillo y azul turquesa."
 onkey(lambda: color('yellow'),'Y')
 onkey(lambda: color ('cyan'),'C')
 onkey(lambda: store('shape', line), 'l')
