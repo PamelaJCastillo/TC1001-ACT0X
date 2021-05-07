@@ -35,10 +35,18 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
+<<<<<<< HEAD
+=======
+    pass  # TODO
+
+def rectangle(start, end):
+    "Draw rectangle from start to end."
+>>>>>>> Punto6
     up()
     goto(start.x, start.y)
     down()
     begin_fill()
+<<<<<<< HEAD
     for count in range (1,361,1):
         left(1)     
         forward(1)
@@ -51,6 +59,25 @@ def rectangle(start, end):
 def triangle(start, end):
     "Draw triangle from start to end."
     pass  # TODO
+=======
+    for count in range(2):
+        forward(end.x - start.x)
+        left(90)
+        forward(start.x/2 - end.x/2)
+        left(90)
+    end_fill()
+
+def triangle(start, end):
+    "Draw triangle from start to end."
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    for count in range (2):
+        forward(end.x - start.x)
+        left(90)
+    end_fill()
+>>>>>>> Punto6
 
 def tap(x, y):
     "Store starting point or draw shape."
@@ -78,8 +105,11 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+<<<<<<< HEAD
 onkey(lambda: color('yellow'),'Y')
 onkey(lambda: color ('cyan'),'C')
+=======
+>>>>>>> Punto6
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')

@@ -1,0 +1,19 @@
+Para poder generar el rectángulo y triángulo seguí estos pasos inicialmente. 
+Up() para levantar la línea del cursor, goto para colocarse en el punto
+señalado con el click del mouse, donde se comenzará a crear la figura. down()
+para volver a bajar a la hoja la líena que traza la figura y begin_fill() para
+indicar que va a comenzar a generar la forma. 
+
+Para el rectángulo se le dice que avance la líena del final al inicio, gira 90
+a la derecha para generar la línea que será la mitad de la distancia marcada
+con el mouse, será mormal a la primer línea creada. Después gira 90 de nuevo
+para continar con la dirección de las otras dos líneas. Este proceso se hace
+dos veces para completar el rectángulo. Por último le indico con end_fill()
+que la figura se ha terminado. 
+
+
+Para el tríangulo le indico que cree una primer líena del final al inicio de
+lo puntos marcados en x por el mouse y después gire 90 a la izquierda para
+generar la otra línea. Este proceso se reazliza dos veces. 
+
+
